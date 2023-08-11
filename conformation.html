@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e31ae4ba4c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/ticket.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Conformation</h1>
+    </section>
+
+    <div id="links">
+    <a href="hikkaduwa.html">Home</a>
+    <a href="index.html">Ticket details</a>
+    <a href="details.html" >Booking details</a>
+    <a href="payment.html" >Payments</a>
+</div>
+    <div id="zoom">
+    <div id="side">
+        <div id="sidebox">
+            <div id="time-box">
+            <span id="con-time"></span>
+            <span id="con-month"></span>
+            </div>
+            <!-- <span id="summery_date"></span> -->
+        </div>
+        <hr>
+        <div id="booking-id">
+        <label for="">#Booking ID</label> <br>
+        <span id="ref"></span>
+        </div>
+    </div>
+
+    <div id="con-summery">
+    
+    <h1 id="con-heading"> <i class="fa-regular fa-square-check" style="color: #17d714;"></i>Booking Confirmation</h1>
+    <p>Thank you for your Booking, Your reservation for the chosen date and time at the Hikkaduwa Turtle Hatchery has been revered.</p>
+    <div>
+    <hr>
+    <p>Ticket Details</p>
+
+   <div id="confo-info">
+        <label for="">Name</label>
+        <span id="name_storage"></span>
+   
+ 
+        <label for="">Mobile</label>
+        <span id="number_storage"></span>
+    
+    
+   
+        <label for="">Email</label>
+        <span id="email_storage"></span>
+
+   
+        <label for="">Gender</label>
+        <span id="gender_storage"></span>
+    </div>
+    <hr>
+    <p>Event Details</p>
+    <div id="r35">
+        <label for="">Date</label>
+        <span id="summery_date"></span>
+    </div>
+    <div id="r35">
+        <label for="">Time</label>
+        <span id="summery_time"></span>
+    </div>
+    <div id="r35">
+        <label for="">Duration</label>
+        <span id="summery_duration"></span>
+    </div>
+    <hr>
+    <div id="booking-detail">
+        <p>Booking Details</p>
+      
+        <div class="price">
+        <div>
+        <span id="la_cost"></span> 
+        </div>
+        <div>
+        <span id="la-sum"></span>
+        </div>
+        <div>
+        <span id="lc_cost"></span>
+        </div>
+        <div>
+        <span id="lc-sum"></span>
+        </div>
+        <div>
+        <span id="fa_cost"></span>
+        </div>
+        <div>
+          <span id="fa-sum"></span>
+        </div>
+        <div>
+        <span id="fc_cost"></span>
+        </div>
+        <div>
+          <span id="fc-sum"></span>
+        </div>
+        <div>
+        <span id="i_cost"></span>
+        </div>
+        <div>
+          <span id="i-sum"></span>
+        </div>
+     
+        <h4>Total Price </h4>
+        <span id="total-price"></span>
+       </div>
+ </div>
+</div>
+<script src="js/details.js"></script>
+<script>
+    coninfo();
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ticket.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    
+    <section>
+        <h1>User details</h1>
+    </section>
+
+    <div id="links">
+      <a href="hikkaduwa.html">Home</a>
+        <a href="ticket.html">Ticket deatils</a>
+        <a href="details.html" >Booking details</a>
+        <a href="payment.html" >Payments</a>
+      </div>
+
+      <div id="summery">
+        <h3>Booking Summary</h3>
+        <hr>
+        <div id="apiit">
+        <label>Date</label>
+        <span id="summery_date"></span>
+  <br>
+        <label>Time</label>
+        <span id="summery_time"></span>
+        <br>
+        <label>Duration</label>
+        <span id="summery_duration"></span>
+  </div>
+        <div id="cost_break">
+          <p>COST BREAKDOWN</p>
+          <hr>
+          <div class="price">
+          <div>
+          <span id="la_cost"></span> 
+          </div>
+          <div>
+          <span id="la-sum"></span>
+          </div>
+          <div>
+          <span id="lc_cost"></span>
+          </div>
+          <div>
+          <span id="lc-sum"></span>
+          </div>
+          <div>
+          <span id="fa_cost"></span>
+          </div>
+          <div>
+            <span id="fa-sum"></span>
+          </div>
+          <div>
+          <span id="fc_cost"></span>
+          </div>
+          <div>
+            <span id="fc-sum"></span>
+          </div>
+          <div>
+          <span id="i_cost"></span>
+          </div>
+          <div>
+            <span id="i-sum"></span>
+          </div>
+           
+          </div>
+         </div> 
+          <h5>Total Price </h5>
+         <span id="total-price"></span>
+         </div>
+    
+    <form action="payment.html"  id="form"> 
+    <h1>Booking details</h1>
+    <div id="detail">
+    <div class="input-control">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" >
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="phone-number">Phone number</label>
+        <input id="phone" name="phone-number" type="tel" maxlength="10" >
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" >
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="email">Confirm email</label>
+        <input id="email2" name="email2" type="email" placeholder="Renter your email">
+        <div class="error"></div>
+    </div>
+    <div>
+        <label for="Gender">Gender</label>
+        <select name="" id="gender" >
+        <option value="">Prefer not to</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+       </select>
+       </div>
+</div>
+  
+  <button type="submit" onclick="detail()">Continue with purchase</button>
+  
+    </form>
+  
+    
+    
+</body>
+<script src="js/details.js"></script>
+<script>
+  countrycode();
+  y();
+</script>
+</html>
