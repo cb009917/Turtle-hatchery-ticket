@@ -19,27 +19,27 @@ function handleClick(event) {
   elementId = event.target.id;
   const isPeakTime = elementId === "peak";
   event.target.style.backgroundColor = "#6ede8a";
-  // Update the selected time slots array
+  
   if (!selectedTimeSlots.includes(buttonText)) {
     selectedTimeSlots.push(buttonText);
   } else {
-    // If the slot is already selected, remove it from the array
+  
     selectedTimeSlots = selectedTimeSlots.filter((slot) => slot !== buttonText);
   }
 
-  // Sort the selected time slots in ascending order
+  
   selectedTimeSlots.sort();
 
-  // Convert time slots into ranges
+ 
   timeRange = getTimeRanges(selectedTimeSlots);
 
-  // Display the selected time range
+ 
 
     document.getElementById("summery_time").innerHTML =timeRange;
     
     localStorage.setItem("local_time", timeRange);
 
-  // Update the duration based on the number of selected time slots
+ 
   let summerycount = ++count;
   document.getElementById("summery_duration").innerHTML = summerycount;
 
